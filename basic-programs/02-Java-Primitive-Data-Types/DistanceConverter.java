@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class DistanceConverter{
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+		double km;
+		km = sc.nextDouble();
+		double totalmiles = km/1.6;
+		System.out.println("The total miles is "+totalmiles+" mile for the given "+km+" km");
+		}
+	}
+	

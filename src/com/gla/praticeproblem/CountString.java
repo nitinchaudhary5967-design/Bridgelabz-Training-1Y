@@ -1,0 +1,16 @@
+package com.gla.String.PracticeProblems;
+import java.util.*;
+class CountString{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        String sub=sc.nextLine();
+        int c=0;
+        for(int i=0;i<=s.length()-sub.length();i++) {
+            if (s.substring(i, i + sub.length()).equals(sub)) {
+                c++;
+            }
+        }
+        System.out.println(c);
+    }
+}

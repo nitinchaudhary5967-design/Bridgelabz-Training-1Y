@@ -1,0 +1,37 @@
+package com.gla.DefiningandImplementingInterfaces;
+interface SmartDevice{
+    void turnOn();
+    void turnOff();
+}
+class Light implements SmartDevice{
+    public void turnOn(){
+        System.out.println("Light ON");
+    }
+    public void turnOff(){
+        System.out.println("Light OFF");
+    }
+}
+class AC implements SmartDevice{
+    public void turnOn(){
+        System.out.println("AC ON");
+    }
+    public void turnOff(){
+        System.out.println("AC OFF");
+    }
+}
+class TV implements SmartDevice{
+    public void turnOn(){
+        System.out.println("TV ON");
+    }
+    public void turnOff(){
+        System.out.println("TV OFF");
+    }
+}
+public class SmartDevices{
+    public static void main(String[]args){
+        Light l=new Light();
+        AC a=new AC();
+        TV t=new TV();
+        l.turnOn();a.turnOn();t.turnOn();
+    }
+}
